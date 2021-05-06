@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.DotNet.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9CF0B86-1C5D-487A-A7E0-CF3315BDDD5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TaleWorlds.DotNet</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TaleWorlds.DotNet</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>lib\TaleWorlds.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MonoNativeFunctionWrapperAttribute.cs" />
+    <Compile Include="MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="CallbackStringBufferManager.cs" />
+    <Compile Include="OneMethodPasserDelegate.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="GameApplicationDomainController.cs" />
+    <Compile Include="CustomParameter`1.cs" />
+    <Compile Include="DefineAsEngineStruct.cs" />
+    <Compile Include="DotNetObject.cs" />
+    <Compile Include="DotNetObjectReferenceCounter.cs" />
+    <Compile Include="EngineClass.cs" />
+    <Compile Include="EngineClassTypeDefinition.cs" />
+    <Compile Include="EngineStruct.cs" />
+    <Compile Include="ICallbackManager.cs" />
+    <Compile Include="IManagedComponent.cs" />
+    <Compile Include="LibraryApplicationInterface.cs" />
+    <Compile Include="IManaged.cs" />
+    <Compile Include="ITelemetry.cs" />
+    <Compile Include="ILibrarySizeChecker.cs" />
+    <Compile Include="INativeArray.cs" />
+    <Compile Include="INativeObjectArray.cs" />
+    <Compile Include="LibraryInterfaceBase.cs" />
+    <Compile Include="LibraryCallback.cs" />
+    <Compile Include="ManagedInitializeMethod.cs" />
+    <Compile Include="Managed.cs" />
+    <Compile Include="ManagedObject.cs" />
+    <Compile Include="ManagedObjectOwner.cs" />
+    <Compile Include="NativeArrayEnumerator`1.cs" />
+    <Compile Include="NativeArray.cs" />
+    <Compile Include="NativeObject.cs" />
+    <Compile Include="NativeObjectArray.cs" />
+    <Compile Include="NativeObjectPointer.cs" />
+    <Compile Include="WeakNativeObjectReference.cs" />
+    <Compile Include="WeakNativeObjectReference`1.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

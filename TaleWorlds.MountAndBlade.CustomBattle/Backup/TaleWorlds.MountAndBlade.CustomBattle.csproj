@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\CustomBattle\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.CustomBattle.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{624DECAC-71F3-459D-A8F7-70B90E33B512}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TaleWorlds.MountAndBlade.CustomBattle</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TaleWorlds.MountAndBlade.CustomBattle</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TaleWorlds.Core" />
+    <Reference Include="TaleWorlds.DotNet" />
+    <Reference Include="TaleWorlds.Engine" />
+    <Reference Include="TaleWorlds.InputSystem" />
+    <Reference Include="TaleWorlds.Library" />
+    <Reference Include="TaleWorlds.Localization" />
+    <Reference Include="TaleWorlds.ModuleManager" />
+    <Reference Include="TaleWorlds.MountAndBlade" />
+    <Reference Include="TaleWorlds.ObjectSystem" />
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CPUBenchmarkMissionLogic.cs" />
+    <Compile Include="CPUBenchmarkMissionSpawnHandler.cs" />
+    <Compile Include="CustomBattleAutoBlockModel.cs" />
+    <Compile Include="CustomBattleSkillList.cs" />
+    <Compile Include="CustomBattleState.cs" />
+    <Compile Include="CustomBattleViews.cs" />
+    <Compile Include="ArmyCompositionGroupVM.cs" />
+    <Compile Include="CustomBattleMenuSideVM.cs" />
+    <Compile Include="CustomBattleMenuVM.cs" />
+    <Compile Include="CustomBattleScreen.cs" />
+    <Compile Include="CustomBattleSubModule.cs" />
+    <Compile Include="SelectionGroup.cs" />
+    <Compile Include="CustomGame.cs" />
+    <Compile Include="CustomBattleSceneData.cs" />
+    <Compile Include="CustomGameManager.cs" />
+    <Compile Include="CustomBattle\CustomBattleGameType.cs" />
+    <Compile Include="CustomBattle\CustomBattlePlayerType.cs" />
+    <Compile Include="CustomBattle\CustomBattlePlayerSide.cs" />
+    <Compile Include="CustomBattle\CustomBattleTimeOfDay.cs" />
+    <Compile Include="CustomBattle\CustomBattleData.cs" />
+    <Compile Include="CustomBattle\CustomBattleSiegeMachineVM.cs" />
+    <Compile Include="CustomBattle\GameTypeSelectionGroupVM.cs" />
+    <Compile Include="CustomBattle\MapSelectionGroupVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\CharacterItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\FactionItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\GameTypeItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\MapItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\PlayerSideItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\PlayerTypeItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\SceneLevelItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\SeasonItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\TimeOfDayItemVM.cs" />
+    <Compile Include="CustomBattle\SelectionItem\WallHitpointItemVM.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

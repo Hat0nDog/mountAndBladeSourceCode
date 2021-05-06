@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Library.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D39FBB7-FF24-48CE-BC46-512278120573}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TaleWorlds.Library</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TaleWorlds.Library</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>lib\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WindingOrder.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="Runtime.cs" />
+    <Compile Include="ApplicationPlatform.cs" />
+    <Compile Include="ApplicationVersion.cs" />
+    <Compile Include="ApplicationVersionType.cs" />
+    <Compile Include="ApplicationVersionGameType.cs" />
+    <Compile Include="AssemblyLoader.cs" />
+    <Compile Include="SunInformation.cs" />
+    <Compile Include="RainInformation.cs" />
+    <Compile Include="SnowInformation.cs" />
+    <Compile Include="AmbientInformation.cs" />
+    <Compile Include="SkyInformation.cs" />
+    <Compile Include="FogInformation.cs" />
+    <Compile Include="TimeInformation.cs" />
+    <Compile Include="AreaInformation.cs" />
+    <Compile Include="PostProcessInformation.cs" />
+    <Compile Include="AtmosphereInfo.cs" />
+    <Compile Include="BinaryReader.cs" />
+    <Compile Include="BinaryWriter.cs" />
+    <Compile Include="BindingPath.cs" />
+    <Compile Include="CachedDataAttribute.cs" />
+    <Compile Include="MBStringBuilder.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="ColorExtensions.cs" />
+    <Compile Include="CommandLineFunctionality.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="IConfigurationManager.cs" />
+    <Compile Include="CubicBezier.cs" />
+    <Compile Include="TelemetryLevelMask.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="IDebugManager.cs" />
+    <Compile Include="EngineMethod.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="EnumHelper`1.cs" />
+    <Compile Include="BasePath.cs" />
+    <Compile Include="GenericComparer`1.cs" />
+    <Compile Include="HTMLDebugManager.cs" />
+    <Compile Include="HTMLDebugCategory.cs" />
+    <Compile Include="HTMLDebugData.cs" />
+    <Compile Include="IMBBindingList.cs" />
+    <Compile Include="ListChangedEventHandler.cs" />
+    <Compile Include="IMBCollection.cs" />
+    <Compile Include="InputType.cs" />
+    <Compile Include="InputUsageMask.cs" />
+    <Compile Include="IPlatformFileHelper.cs" />
+    <Compile Include="IPlatformWebHelper.cs" />
+    <Compile Include="ISerializableObject.cs" />
+    <Compile Include="IReader.cs" />
+    <Compile Include="IWriter.cs" />
+    <Compile Include="IViewModel.cs" />
+    <Compile Include="PropertyChangedWithValueEventArgs.cs" />
+    <Compile Include="PropertyTypeFeeder.cs" />
+    <Compile Include="PropertyChangedWithValueEventHandler.cs" />
+    <Compile Include="ListChangedEventArgs.cs" />
+    <Compile Include="ListChangedType.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MachineId.cs" />
+    <Compile Include="ManagedArray.cs" />
+    <Compile Include="ManagedDllFolder.cs" />
+    <Compile Include="Mat2.cs" />
+    <Compile Include="Mat3.cs" />
+    <Compile Include="MatrixFrame.cs" />
+    <Compile Include="MBList2D`1.cs" />
+    <Compile Include="MBBindingList`1.cs" />
+    <Compile Include="MBList`1.cs" />
+    <Compile Include="MathF.cs" />
+    <Compile Include="MBMath.cs" />
+    <Compile Include="MBQueue`1.cs" />
+    <Compile Include="MBReadOnlyDictionary`2.cs" />
+    <Compile Include="MBReadOnlyList`1.cs" />
+    <Compile Include="MBUtil.cs" />
+    <Compile Include="MBWorkspace`1.cs" />
+    <Compile Include="NavigationPath.cs" />
+    <Compile Include="ObjectInstanceTracker.cs" />
+    <Compile Include="ParameterContainer.cs" />
+    <Compile Include="ParameterFile.cs" />
+    <Compile Include="ParameterLoader.cs" />
+    <Compile Include="PathFaceRecord.cs" />
+    <Compile Include="PathFinder.cs" />
+    <Compile Include="PerformanceTestBlock.cs" />
+    <Compile Include="PinnedArrayData`1.cs" />
+    <Compile Include="PlatformFileHelperPC.cs" />
+    <Compile Include="PlatformInitParams.cs" />
+    <Compile Include="PlatformWebHelperDefault.cs" />
+    <Compile Include="PriorityQueue`2.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="ResourceChangeEvent.cs" />
+    <Compile Include="ResourceDepot.cs" />
+    <Compile Include="ResourceDepotFile.cs" />
+    <Compile Include="ResourceDepotLocation.cs" />
+    <Compile Include="SingleThreadedSynchronizationContext.cs" />
+    <Compile Include="SRTHelper.cs" />
+    <Compile Include="StringReader.cs" />
+    <Compile Include="StringWriter.cs" />
+    <Compile Include="TWException.cs" />
+    <Compile Include="TWXmlLoadException.cs" />
+    <Compile Include="TWParallel.cs" />
+    <Compile Include="TypeCollector`1.cs" />
+    <Compile Include="Vec2.cs" />
+    <Compile Include="Vec2i.cs" />
+    <Compile Include="Vec3.cs" />
+    <Compile Include="Vec3i.cs" />
+    <Compile Include="ViewModel.cs" />
+    <Compile Include="DataSourceProperty.cs" />
+    <Compile Include="VirtualFolders.cs" />
+    <Compile Include="VirtualDirectoryAttribute.cs" />
+    <Compile Include="VirtualFileAttribute.cs" />
+    <Compile Include="NewsManager\NewsManager.cs" />
+    <Compile Include="NewsManager\NewsItem.cs" />
+    <Compile Include="NewsManager\NewsType.cs" />
+    <Compile Include="EventSystem\EventManager.cs" />
+    <Compile Include="EventSystem\DictionaryByType.cs" />
+    <Compile Include="EventSystem\EventBase.cs" />
+    <Compile Include="CodeGeneration\ClassCode.cs" />
+    <Compile Include="CodeGeneration\ClassCodeAccessModifier.cs" />
+    <Compile Include="CodeGeneration\CodeGenerationContext.cs" />
+    <Compile Include="CodeGeneration\CodeGenerationFile.cs" />
+    <Compile Include="CodeGeneration\CommentSection.cs" />
+    <Compile Include="CodeGeneration\ConstructorCode.cs" />
+    <Compile Include="CodeGeneration\MethodCode.cs" />
+    <Compile Include="CodeGeneration\MethodCodeAccessModifier.cs" />
+    <Compile Include="CodeGeneration\MethodCodePolymorphismInfo.cs" />
+    <Compile Include="CodeGeneration\NamespaceCode.cs" />
+    <Compile Include="CodeGeneration\VariableCode.cs" />
+    <Compile Include="CodeGeneration\VariableCodeAccessModifier.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Network.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADF061F8-C6E6-42D4-B85A-45753D35020A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TaleWorlds.Network</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TaleWorlds.Network</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>lib\TaleWorlds.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientWebSocketHandler.cs" />
+    <Compile Include="CoroutineDelegate.cs" />
+    <Compile Include="CoroutineManager.cs" />
+    <Compile Include="Coroutine.cs" />
+    <Compile Include="CoroutineState.cs" />
+    <Compile Include="WaitForTicks.cs" />
+    <Compile Include="WaitForSpecialCase.cs" />
+    <Compile Include="DotNetHttpDriver.cs" />
+    <Compile Include="HttpDriverManager.cs" />
+    <Compile Include="HttpGetRequest.cs" />
+    <Compile Include="HttpPostRequest.cs" />
+    <Compile Include="HttpRequestTaskState.cs" />
+    <Compile Include="IHttpDriver.cs" />
+    <Compile Include="IHttpRequestTask.cs" />
+    <Compile Include="IMessageProxyClient.cs" />
+    <Compile Include="JsonSocketMessage.cs" />
+    <Compile Include="Authorize.cs" />
+    <Compile Include="PostBoxId.cs" />
+    <Compile Include="MessageProxy.cs" />
+    <Compile Include="ConnectionState.cs" />
+    <Compile Include="MessageServiceConnection.cs" />
+    <Compile Include="ServiceExceptionModel.cs" />
+    <Compile Include="ServiceException.cs" />
+    <Compile Include="RESTClient.cs" />
+    <Compile Include="ClientsideSession.cs" />
+    <Compile Include="INetworkSerializable.cs" />
+    <Compile Include="MessageBuffer.cs" />
+    <Compile Include="MessageId.cs" />
+    <Compile Include="MessageContract.cs" />
+    <Compile Include="MessageContractCreator.cs" />
+    <Compile Include="MessageContractCreator`1.cs" />
+    <Compile Include="MessageContractHandlerManager.cs" />
+    <Compile Include="MessageContractHandlerDelegate`1.cs" />
+    <Compile Include="MessageContractHandler.cs" />
+    <Compile Include="MessageContractHandler`1.cs" />
+    <Compile Include="NetworkMessage.cs" />
+    <Compile Include="INetworkMessageWriter.cs" />
+    <Compile Include="INetworkMessageReader.cs" />
+    <Compile Include="NetworkSession.cs" />
+    <Compile Include="ServersideSession.cs" />
+    <Compile Include="ServersideSessionManager.cs" />
+    <Compile Include="IncomingServerSessionMessage.cs" />
+    <Compile Include="TcpSocket.cs" />
+    <Compile Include="TcpMessageReceiverDelegate.cs" />
+    <Compile Include="TcpCloseDelegate.cs" />
+    <Compile Include="TcpStatus.cs" />
+    <Compile Include="TickManager.cs" />
+    <Compile Include="WebSocketMessage.cs" />
+    <Compile Include="MessageInfo.cs" />
+    <Compile Include="MessageTypes.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
